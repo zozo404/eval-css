@@ -1,0 +1,165 @@
+/*all general*/
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+/*css du header */
+.partie-header{
+    background-color: #202529;
+    color: white;
+}
+.partie-header{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    transition: 0.5s;
+}
+
+.partie-header, .div-navbar{
+    display: flex;
+    align-items: baseline;
+}
+.div-logo{
+    flex: 1;
+    position: relative;
+    left: 25px;
+}
+.div-logo p{
+    margin-left: 70px;
+}
+.div-navbar{
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin-right: 70px;
+    /* width: 69%; */
+}
+@media screen and (max-width:1536px) {
+    .btn-font-size{
+        font-size: 20px;
+        transition: 0.5s;
+    }
+}
+.btn-header{
+    text-align: center;
+    margin-left: 37px;
+}
+.btn-header p{
+    position: relative;
+}
+.btn-contact{
+    margin-right: 50px;
+}
+.img-navbar{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+/*partie welcome */
+.container-welcome{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.div-gris{
+    background-color: #f8f9f8;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-bottom: 50px;
+}
+.title-welcome{
+    padding-top: 25px;
+}
+.texte-welcome{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.btn-action{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.text-btn-action{
+    background-color: #006eff;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+
+}
+/*partie bas du corps */
+.download img{
+    width: 40px;
+    height: 40px;
+}
+.mini-haut, .mini-middle, .mini-bas{
+    display: flex;
+    
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 25px;
+}
+.layout, .download, .middle-header, .boxes, .code, .trust{
+    background-color: #f8f9f8;
+    width: 45%;
+    transition: 0.5s;
+}
+.layout img, .download img, .middle-header img, .boxes img, .code img, .trust img{
+    position: relative;
+    top: -10px;
+    background-color: #f8f9f8;
+}
+/* footer */
+.footer{
+    background-color: #202529;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+.footer p{
+    margin: auto;
+}
+/* media queries responsive*/
+.navbar{
+    display: none;
+}
+@media screen and (max-width:1000px){
+    .navbar{
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-navbar{
+        display: none;
+    }
+    .div-logo{
+        position: initial;
+        transition: 0.5s;
+    }
+    .partie-header{
+        padding-bottom: 0px;
+        padding-top: 5px;
+        transition: 0.5s;
+        align-items: initial;
+    }
+    .div-gris {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mini-haut, .mini-middle, .mini-bas{
+        flex-direction: column;
+    }
+    .layout, .download, .middle-header, .boxes, .code, .trust{
+        transition: 0.5s;
+        width: 100%;
+    }
+    .download, .boxes, .trust{
+        margin-top: 25px;
+    }
+    .div-logo p{
+        margin-left: 30px;
+        transition: 0.5s;
+    }
+}
